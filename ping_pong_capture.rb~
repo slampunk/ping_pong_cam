@@ -1,0 +1,1 @@
+IO.popen('sudo modprobe bcm2835-v4l2; cd /home/osmc && /usr/local/bin/ffmpeg -f video4linux2 -framerate 30 -video_size 1280X720 -i /dev/video0 capture.mpeg')
