@@ -12,5 +12,3 @@ while True:
         print('Button Pressed')
         f = open("/tmp/event.log", "a")
         f.write("Button press event!")
-        # os.system('ruby ping_pong_deliver.rb')
-        time.sleep(0.2)
