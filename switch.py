@@ -10,5 +10,7 @@ while True:
     input_state = GPIO.input(18)
     if input_state == False:
         print('Button Pressed')
-        os.system('ruby ping_pong_deliver.rb')
+        f = open("/tmp/event.log", "a")
+        f.write("Button press event!")
+        # os.system('ruby ping_pong_deliver.rb')
         time.sleep(0.2)
